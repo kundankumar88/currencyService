@@ -1,0 +1,22 @@
+spring:
+  application:
+    name : currency-conversion-1
+  cloud:
+    config:
+      enabled: false
+  sleuth:
+    sampler:
+      probability: 1
+  zipkin.base.url: http://localhost:9411/
+
+
+server.port: 8100
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+
+
+
+#http://localhost:8100/currency-conversion/from/USD/to/INR/quantity/10
